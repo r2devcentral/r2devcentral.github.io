@@ -10,7 +10,7 @@ This should be our index of applications
 
   <div class="panel panel-default">
     <div class="panel-heading">
-      <a href="{{ application.url | prepend: site.baseurl }}">{{ application.title }}</a>
+      <a href="{{ application.url | prepend: site.github.url }}">{{ application.title }}</a>
     </div>
     <div class="panel-body">
       <div class="media">
