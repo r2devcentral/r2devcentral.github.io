@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  </header>
+
+  <div>
+    <img src="{{ page.screenshot }}" alt="screenshot of {{page.title}}">
+  </div>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="list-group">
+    {% if page.repositoryURL %}
+      <a class="list-group-item" href="{{ page.repositoryURL }}">Repository</a>
+    {% endif %}
+
+    {% if page.requirementsURL %}
+      <a class="list-group-item" href="{{ page.requirementsURL }}">Requirements</a>
+    {% endif %}
+
+    {% if page.prodURL %}
+      <a class="list-group-item" href="{{ page.prodURL }}">Production</a>
+    {% endif %}
+
+    {% if page.devURL %}
+      <a class="list-group-item" href="{{ page.devURL }}">Development</a>
+    {% endif %}
+  </div>
+
+</article>

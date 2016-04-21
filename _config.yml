@@ -1,0 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: DevCentral
+email: murphy.tom@epa.gov
+description: > # this means to ignore newlines until "baseurl:"
+  A fabulous app to feature and share information about our development
+  efforts.  How about that?
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: epa
+github_username:  EPA
+
+collections:
+  applications:
+    output: true
+  apis:
+    output: true
+  dbs:
+    output: true
+
+# Build settings
+markdown: kramdown
