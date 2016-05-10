@@ -10,7 +10,7 @@ This should be our index of apis
 
   <div class="panel panel-default">
     <div class="panel-heading">
-      <a href="{{ api.url | prepend: site.baseurl }}">{{ api.title }}</a>
+      <a href="{{ api.url | prepend: site.github.url }}">{{ api.title }}</a>
     </div>
     <div class="panel-body">
       {{ api.content }}
